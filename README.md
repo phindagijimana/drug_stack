@@ -2,6 +2,10 @@
 
 > *The open drug-discovery and -development handbook.*
 
+### 🌐 Read it online → **[https://phindagijimana.github.io/drug_stack/](https://phindagijimana.github.io/drug_stack/)**
+
+[![Site](https://img.shields.io/badge/site-DrugStack-009688?logo=readthedocs&logoColor=white)](https://phindagijimana.github.io/drug_stack/)
+[![GitHub](https://img.shields.io/badge/github-phindagijimana%2Fdrug__stack-181717?logo=github)](https://github.com/phindagijimana/drug_stack)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](pyproject.toml)
 
@@ -52,3 +56,15 @@ Early. The skeleton and the high-traffic pages (fundamentals, target ID, molecul
 ## License
 
 [MIT](LICENSE).
+
+## Contact
+
+Maintained by **Philbert Ndagijimana**.
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-philbert--ndagijimana-0a66c2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/philbert-ndagijimana-319570188/)
+[![Email](https://img.shields.io/badge/email-phindagiji%40gmail.com-d14836?logo=gmail&logoColor=white)](mailto:phindagiji@gmail.com)
+[![Issues](https://img.shields.io/github/issues/phindagijimana/drug_stack?logo=github)](https://github.com/phindagijimana/drug_stack/issues)
+
+- 💼 **LinkedIn** — <https://www.linkedin.com/in/philbert-ndagijimana-319570188/>
+- ✉️ **Email** — <phindagiji@gmail.com>
+- 🐛 **Issues / PRs** — <https://github.com/phindagijimana/drug_stack/issues>

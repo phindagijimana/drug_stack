@@ -167,3 +167,11 @@ This is a community reference. The medicinal-chemistry parts reflect a particula
 ## License
 
 Content and code are released under the [MIT license](https://github.com/phindagijimana/drug_stack/blob/main/LICENSE).
+
+## Contact
+
+Maintained by **Philbert Ndagijimana**.
+
+- 💼 **LinkedIn** — <https://www.linkedin.com/in/philbert-ndagijimana-319570188/>
+- ✉️ **Email** — <phindagiji@gmail.com>
+- 🐛 **Issues / PRs** — <https://github.com/phindagijimana/drug_stack/issues>
