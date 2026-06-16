@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.python-version
+
+# Tooling caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# MkDocs
+site/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# Drug-discovery artifacts (large files don't belong in git)
+*.sdf
+*.mol2
+*.pdbqt
+*.parquet
+*.npy
+chembl_*.txt
+chembl_*.txt.gz
+chembl_*postgresql*
+*.sqlite
+docked/
+ligands_pdbqt/
+out/

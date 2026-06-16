@@ -1,0 +1,210 @@
+site_name: DrugStack
+site_description: DrugStack — the open drug-discovery and -development handbook. Fundamentals, target identification, molecular design, virtual screening, ADMET, repurposing, clinical translation, AI / ML, data engineering, and landmark work.
+site_url: https://phindagijimana.github.io/drug_stack/
+repo_url: https://github.com/phindagijimana/drug_stack
+repo_name: phindagijimana/drug_stack
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.path
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.action.edit
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - Home: index.md
+  - Getting started:
+      - getting-started/index.md
+      - 1. Installing your environment: getting-started/install.md
+      - 2. Your first SMILES: getting-started/first-smiles.md
+      - 3. Your first virtual screen: getting-started/first-screen.md
+      - 4. Your first figure: getting-started/first-figure.md
+  - Reading paths: paths/index.md
+  - Fundamentals:
+      - fundamentals/index.md
+      - Drug modalities: fundamentals/drug-modalities.md
+      - Biological targets: fundamentals/biological-targets.md
+      - Disease biology: fundamentals/disease-biology.md
+      - Medicinal chemistry: fundamentals/medicinal-chemistry.md
+      - Pharmacology (PK/PD): fundamentals/pharmacology.md
+      - ADMET overview: fundamentals/admet-overview.md
+      - Drug-discovery pipeline: fundamentals/pipeline.md
+      - Computational & math foundations:
+          - fundamentals/foundations/index.md
+          - Python: fundamentals/foundations/python.md
+          - Bash: fundamentals/foundations/bash.md
+          - CLI commands: fundamentals/foundations/cli.md
+          - Data analysis: fundamentals/foundations/data-analysis.md
+          - Statistics: fundamentals/foundations/statistics.md
+          - Mathematics: fundamentals/foundations/mathematics.md
+          - Biology: fundamentals/foundations/biology.md
+          - Chemistry: fundamentals/foundations/chemistry.md
+          - Cheminformatics: fundamentals/foundations/cheminformatics.md
+          - Structural biology: fundamentals/foundations/structural-biology.md
+  - Target identification:
+      - target-id/index.md
+      - Genomics: target-id/genomics.md
+      - Transcriptomics: target-id/transcriptomics.md
+      - Proteomics: target-id/proteomics.md
+      - Network & pathway biology: target-id/networks.md
+      - Literature & knowledge graphs: target-id/literature.md
+      - Target validation: target-id/validation.md
+      - Druggability: target-id/druggability.md
+  - Molecular design:
+      - molecular-design/index.md
+      - Molecular representations: molecular-design/representations.md
+      - Descriptors & fingerprints: molecular-design/descriptors.md
+      - QSAR / property prediction: molecular-design/qsar.md
+      - Generative chemistry: molecular-design/generative.md
+      - Structure-based design: molecular-design/structure-based.md
+      - Docking: molecular-design/docking.md
+      - Free-energy methods: molecular-design/free-energy.md
+      - Multi-parameter optimization: molecular-design/mpo.md
+  - Virtual screening:
+      - screening/index.md
+      - Ligand-based screening: screening/ligand-based.md
+      - Structure-based screening: screening/structure-based.md
+      - Ultra-large libraries: screening/ultra-large.md
+      - Active learning & iterative screens: screening/active-learning.md
+      - Hit triage: screening/hit-triage.md
+  - ADMET & toxicity:
+      - admet-tox/index.md
+      - Absorption: admet-tox/absorption.md
+      - Distribution: admet-tox/distribution.md
+      - Metabolism: admet-tox/metabolism.md
+      - Excretion: admet-tox/excretion.md
+      - In-silico toxicity: admet-tox/toxicity.md
+      - Safety pharmacology: admet-tox/safety.md
+      - Blood–brain barrier: admet-tox/bbb.md
+  - Drug repurposing:
+      - repurposing/index.md
+      - Signature-based: repurposing/signature-based.md
+      - Knowledge graphs: repurposing/knowledge-graphs.md
+      - Clinical evidence & RWE: repurposing/rwe.md
+  - Clinical translation:
+      - clinical/index.md
+      - Preclinical models: clinical/preclinical.md
+      - Clinical trials: clinical/trials.md
+      - Regulatory science: clinical/regulatory.md
+      - Biomarkers: clinical/biomarkers.md
+      - Patient stratification: clinical/stratification.md
+  - AI / ML:
+      - ai/index.md
+      - Classical ML on molecules: ai/classical-ml.md
+      - Deep learning for chemistry: ai/deep-learning.md
+      - Protein language models: ai/protein-models.md
+      - Generative chemistry models: ai/generative-models.md
+      - Foundation models: ai/foundation-models.md
+      - Evaluation pitfalls: ai/evaluation.md
+      - Uncertainty & calibration: ai/uncertainty.md
+      - Regulatory & clinical deployment: ai/regulatory.md
+  - Data engineering:
+      - data-engineering/index.md
+      - Foundations: data-engineering/foundations.md
+      - The DAG mental model: data-engineering/dag.md
+      - The five pillars: data-engineering/five-pillars.md
+      - Cheminformatics pipelines: data-engineering/cheminformatics-pipelines.md
+      - Assay data pipelines: data-engineering/assay-data.md
+      - Lakehouse for chemistry & biology: data-engineering/lakehouse.md
+      - MLOps for drug discovery: data-engineering/mlops.md
+      - Testing pipelines: data-engineering/testing.md
+      - HPC → industry: data-engineering/hpc-to-industry.md
+  - Computing:
+      - computing/index.md
+      - Python scientific stack: computing/python-stack.md
+      - RDKit & OpenMM: computing/rdkit-openmm.md
+      - Containers (Docker, Apptainer): computing/containers.md
+      - HPC and Slurm: computing/hpc-slurm.md
+      - Cloud (AWS, GCP, Azure): computing/cloud.md
+      - GPUs and accelerators: computing/gpus.md
+      - Dependency management: computing/dependencies.md
+      - Reproducibility checklist: computing/reproducibility.md
+  - Landmark work:
+      - landmark/index.md
+      - Foundational papers: landmark/papers.md
+      - Reference datasets: landmark/datasets.md
+      - Major pipelines: landmark/pipelines.md
+      - Targets, drugs, and atlases: landmark/atlases.md
+  - Tutorials:
+      - tutorials/index.md
+      - Similarity search on ChEMBL: tutorials/similarity-search.md
+      - QSAR walkthrough: tutorials/qsar-walkthrough.md
+      - Docking walkthrough: tutorials/docking-walkthrough.md
+      - Target ID from RNA-seq: tutorials/target-id.md
+      - Generative design: tutorials/generative-design.md
+      - Capstone — target to lead: tutorials/capstone.md
+  - Tools: tools/index.md
+  - Glossary: glossary.md
+  - Further reading: further-reading.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/phindagijimana/drug_stack
+  generator: false
